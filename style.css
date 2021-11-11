@@ -1,0 +1,46 @@
+body {
+    font-family: "trebuchet ms", sans-serif;
+    font-size: 90%;
+    margin-left: 20%;
+    background-color: rgb(156, 156, 161);
+}
+
+form {
+    background-color: #FAFAFA;
+    padding: 40px;
+    width: 800px;
+    height: 800px;
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+label {
+    margin-top: 2rem;
+    display: block;
+}
+
+label.inline {
+    display: inline;
+    margin-right: 2px;
+}
+
+input[type=radio] {
+    background-color: transparent;
+    border: none;
+    width: 10px;
+    display: line;
+    margin: 0.8em;
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-top: 1rem;
+    margin-left: 5px;
+    box-shadow: 1px 1px 1px #D83F3D;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+}
