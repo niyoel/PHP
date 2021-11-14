@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Document</title>
-</head>
-<body>
-  
-
-<form class="excuse" method="get" action="">
+ </head>
+ <body>
+  <div class="container mt-5">
+ <form class="was validated" method="get" action="">
    <img src= 'https://mir-s3-cdn-cf.behance.net/projects/404/c8786049443083.58b520359776b.jpg' width="200" height="150" class="w3-circle"><br><br>
-<h1>The best Fake Excuse Notes Generator for parents </h1>
+ <h1>The best Fake Excuse Notes Generator for parents </h1>
 
-   <label for="name" class='inline'>Child's name: </label>
-    <input type="text" id="name" name="name" value="" /><br>
+   <label for="name" class='form-label'>Child's name: </label>
+    <input type="text" id="name" class='form-control  is valid' required name="name" value=" " /><br>
     Choose  gender: <input type="radio" value="ma fille" name="gender" checked>F
-    <input type="radio" value="fils" name="gender" checked>M<br>
-    <label for="teacher" class='inline'>Name of teacher: </label>
-    <input type="text" id="teacher" name="teacher" value="" /><br>
+    <input type="radio" value="fils" class='btn btn-secondary m-2' name="gender" checked>M<br>
+    <label for="teacher" class='form-label'>Name of teacher: </label>
+    <input type="text" id="teacher" class='form-control is valid' width='300px' required name="teacher" value="" /><br>
 
     Reason: <br>
 
-    <input type="radio" value="illness" name="reason" checked>illness<br>
-    <input type="radio" value="death" name="reason" checked>death of the pet (or a family member)<br>
-    <input type="radio" value="activity" name="reason" checked>significant extra-curricular activity<br>
-    <input type="radio" value="other" name="reason" checked>any other excuse of your choice <br>
-    <input type="submit" name="submit" value="Find Excuse">
+    <input type="radio" value="illness" class='btn btn-secondary m-2' name="reason" checked>illness<br>
+    <input type="radio" value="death" class='btn btn-secondary m-2' name="reason" checked>death of the pet (or a family member)<br>
+    <input type="radio" value="activity" class='btn btn-secondary m-2' name="reason" checked>significant extra-curricular activity<br>
+    <input type="radio" value="other"  class='btn btn-secondary m-2'name="reason" checked>any other excuse of your choice <br>
+    <input type="submit" class='btn btn-secondary m-2' name="submit" value="Find Excuse">
    
       <?php
       $now = date("D j M Y");
@@ -64,5 +64,6 @@
   echo $now . "</br>","</br>";
   echo $excuse;?></p>
 </form>
+</div>
 </body>
 </html>
