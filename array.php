@@ -1,35 +1,35 @@
 <?php
-// $me = array('firstname' => 'Ellen',
-//             'lastname'=> 'Niyobuhungiro',
-//             'season'=> 'summer',
-//             'soccer'=> 'false',
-//             'hobies'=> array('reading books','gardening','runing')
-// );
+$me = array('firstname' => 'Ellen',
+            'lastname'=> 'Niyobuhungiro',
+            'season'=> 'summer',
+            'soccer'=> 'false',
+            'hobies'=> array('reading books','gardening','runing')
+);
 
-// echo  '<pre>';
-// print_r($me);
-// echo  '</pre>';
-// echo $me['firstname'];
-// echo  '</pre>';
-// $countries = array( 'Belgium', 'France' , 'Germany', 'Netherlands', 'Ukraine' ); 
-// echo '<pre>';
-// print_r($countries);
-// array_push($countries, 'England');
-// echo '<pre>';
-// print_r($countries);
+echo  '<pre>';
+print_r($me);
+echo  '</pre>';
+echo $me['firstname'];
+echo  '</pre>';
+$countries = array( 'Belgium', 'France' , 'Germany', 'Netherlands', 'Ukraine' ); 
+echo '<pre>';
+print_r($countries);
+array_push($countries, 'England');
+echo '<pre>';
+print_r($countries);
 echo '<hr>';
-// // Create an array representing your family members
+// Create an array representing your family members
 
 
-// $family= array('Kesi','jacqueline','william','assinath','grace','scadrach','esseza');
-// echo '</pre>';
-// print_r($family);
-// $recipes= array('Pasta','salmon','peas','Sausage','mushroom','ragu');
-// echo '<pre>';
-// print_r($recipes);
-// $films= array('love comes softly','notebook','madea'); ?><br><?php
-// echo '</pre>';
-// print_r($films[2]);
+$family= array('Kesi','jacqueline','william','assinath','grace','scadrach','esseza');
+echo '</pre>';
+print_r($family);
+$recipes= array('Pasta','salmon','peas','Sausage','mushroom','ragu');
+echo '<pre>';
+print_r($recipes);
+$films= array('love comes softly','notebook','madea'); ?><br><?php
+echo '</pre>';
+print_r($films[2]);
 
 // Multidimensional arrays
 
@@ -107,7 +107,7 @@ print_r($web_development);
 $html = array('html');
 echo '<hr>';
 $replace=array_replace($web_development['frontend'],$html);
- print_r($replace);
+var_dump($replace);
 echo '<hr>';
 array_splice($web_development['frontend'],2);
 print_r($web_development);
